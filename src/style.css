@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-zinc-900 text-white;
+}
+#aboutme {
+    @apply w-full h-96 flex flex-row;
+}
+#aboutme .imagePart {
+    @apply w-2/12 rounded-xl m-10;
+}
+#aboutme .imagePart img {
+    @apply rounded-2xl;
+}
+#aboutme .presentaion {
+    @apply w-5/12 m-10 justify-center items-start
+    flex flex-col; 
+}
+#aboutme .presentaion h1 {
+    @apply text-yellow-500 font-bold text-3xl;
+}
+#aboutme .presentaion h2 {
+    @apply text-white font-bold text-3xl;
+}
+#aboutme .presentaion p {
+    @apply text-white text-sm;
+}
+#aboutme .presentaion .buttonMore {
+    @apply  w-fit border-yellow-500 
+    border-2 border-solid mt-7 rounded-3xl relative 
+    justify-center items-center flex flex-row;
+}
+#aboutme .presentaion button {
+    @apply text-white p-2 pl-5 pr-5 ;
+}
+#aboutme .presentaion .buttonMore .iconMore {
+    @apply text-white bg-yellow-500 h-10 w-10 rounded-3xl
+    text-center justify-center items-center flex cursor-pointer;
+}
+#aboutme .navbar {
+    @apply flex flex-col relative text-center justify-center
+    items-center;
+}
+#aboutme .navbar i {
+    @apply text-yellow-500 border-2 border-zinc-700
+    border-solid m-2 p-2 rounded-full text-xs/3 bg-zinc-700;
+}
