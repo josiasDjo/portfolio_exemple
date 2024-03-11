@@ -9,10 +9,11 @@ body {
     @apply w-full h-96 flex flex-row;
 }
 #aboutme .imagePart {
-    @apply w-2/12 rounded-xl m-10;
+    @apply w-2/12 m-10 bg-yellow-500 h-3/6
+    relative;
 }
 #aboutme .imagePart img {
-    @apply rounded-2xl;
+    @apply rounded-br-2xl rounded-bl-2xl w-11/12 absolute right-0;
 }
 #aboutme .presentaion {
     @apply w-5/12 m-10 justify-center items-start
@@ -27,7 +28,7 @@ body {
 #aboutme .presentaion p {
     @apply text-white text-sm;
 }
-#aboutme .presentaion .buttonMore {
+.buttonMore {
     @apply  w-fit border-yellow-500 
     border-2 border-solid mt-7 rounded-3xl relative 
     justify-center items-center flex flex-row;
@@ -40,10 +41,63 @@ body {
     text-center justify-center items-center flex cursor-pointer;
 }
 #aboutme .navbar {
-    @apply flex flex-col relative text-center justify-center
-    items-center;
+    @apply flex flex-col text-center justify-center
+    items-center absolute right-2 top-16;
+}
+#aboutme .navbar a {
+    @apply border-2 border-zinc-700
+    border-solid m-2 p-2 rounded-full text-xs/3 bg-zinc-700;
 }
 #aboutme .navbar i {
-    @apply text-yellow-500 border-2 border-zinc-700
-    border-solid m-2 p-2 rounded-full text-xs/3 bg-zinc-700;
+    @apply text-yellow-500 text-xs/3;
+}
+#aboutme .navbar a:hover {
+    @apply bg-yellow-500 text-white; 
+}
+#aboutme .navbar a:active {
+    @apply text-white text-xs/3;
+}
+#aboutme .part2 {
+    @apply relative;
+}
+
+#aboutmeVrai {
+    @apply w-9/12 m-auto relative;
+}
+#aboutmeVrai .title {
+    @apply relative text-center items-center justify-center
+    flex mb-12;
+}
+#aboutmeVrai .title h1 {
+    @apply font-bold text-center text-2xl;
+}
+#aboutmeVrai .title h1 span {
+    @apply text-yellow-500 pl-2;
+}
+#aboutmeVrai .title h2 {
+    @apply font-bold text-center text-5xl absolute opacity-10
+    top-0;
+}
+#aboutmeVrai .container-present .part_one {
+    @apply w-3/6;
+}
+#aboutmeVrai .container-present .part_one h3 {@apply font-bold mb-5;}
+#aboutmeVrai .container-present .part_one .part1 {
+    @apply flex flex-row;
+}
+#aboutmeVrai .container-present .part_one .part1 div {
+    @apply mr-12;
+}
+#aboutmeVrai .container-present .part_one .part1 div p span {
+    @apply font-bold;
+}
+#aboutmeVrai .container-present .part_one .part1 div p {
+    @apply opacity-65;
+}
+#aboutmeVrai .container-present button {
+    @apply text-white p-2 pl-5 pr-5 ;
+}
+#aboutmeVrai .container-present .buttonMore .iconMore {
+    @apply text-white bg-yellow-500 h-10 w-10 rounded-3xl
+    text-center justify-center items-center flex cursor-pointer;
 }
