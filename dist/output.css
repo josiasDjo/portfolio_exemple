@@ -734,8 +734,22 @@ body {
   opacity: 0.1;
 }
 
-#aboutmeVrai .container-present .part_one {
+#aboutmeVrai .container-present {
+  width: 100%;
+}
+
+#aboutmeVrai .container-present .sub-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+#aboutmeVrai .container-present .div_content {
   width: 50%;
+}
+
+#aboutmeVrai .container-present .part_one {
+  width: 100%;
 }
 
 #aboutmeVrai .container-present .part_one h3 {
@@ -781,4 +795,28 @@ body {
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#aboutmeVrai .container-present .sub-container .div_content2 {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+#aboutmeVrai .container-present .sub-container .div_content2 .sub-content {
+  margin: 0.5rem;
+  width: 33.333333%;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(63 63 70 / var(--tw-border-opacity));
+  padding: 1.5rem;
+}
+
+#aboutmeVrai .container-present .sub-container .div_content2 .sub-content label {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }

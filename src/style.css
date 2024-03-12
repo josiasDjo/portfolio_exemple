@@ -78,8 +78,17 @@ body {
     @apply font-bold text-center text-5xl absolute opacity-10
     top-0;
 }
-#aboutmeVrai .container-present .part_one {
+#aboutmeVrai .container-present {
+    @apply w-full;
+}
+#aboutmeVrai .container-present .sub-container {
+    @apply w-full flex flex-row;
+}
+#aboutmeVrai .container-present .div_content {
     @apply w-3/6;
+}
+#aboutmeVrai .container-present .part_one {
+    @apply w-full;
 }
 #aboutmeVrai .container-present .part_one h3 {@apply font-bold mb-5;}
 #aboutmeVrai .container-present .part_one .part1 {
@@ -100,4 +109,13 @@ body {
 #aboutmeVrai .container-present .buttonMore .iconMore {
     @apply text-white bg-yellow-500 h-10 w-10 rounded-3xl
     text-center justify-center items-center flex cursor-pointer;
+}
+#aboutmeVrai .container-present .sub-container .div_content2  {
+    @apply w-3/6 flex flex-wrap;
+}
+#aboutmeVrai .container-present .sub-container .div_content2 .sub-content {
+    @apply w-2/6 border-2 border-zinc-700 border-solid p-6 m-2;
+}
+#aboutmeVrai .container-present .sub-container .div_content2 .sub-content label {
+    @apply text-yellow-500 font-bold text-2xl;
 }
