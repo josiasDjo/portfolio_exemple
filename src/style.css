@@ -42,7 +42,7 @@ body {
 }
 #aboutme .navbar {
     @apply flex flex-col text-center justify-center
-    items-center absolute right-2 top-16;
+    items-center fixed float-right right-2 top-2/4;
 }
 #aboutme .navbar a {
     @apply border-2 border-zinc-700
@@ -64,19 +64,18 @@ body {
 #aboutmeVrai {
     @apply w-9/12 m-auto relative;
 }
-#aboutmeVrai .title {
+.title {
     @apply relative text-center items-center justify-center
     flex mb-12;
 }
-#aboutmeVrai .title h1 {
+.title h1 {
     @apply font-bold text-center text-2xl;
 }
-#aboutmeVrai .title h1 span {
+.title h1 span {
     @apply text-yellow-500 pl-2;
 }
-#aboutmeVrai .title h2 {
-    @apply font-bold text-center text-5xl absolute opacity-10
-    top-0;
+.title h2 {
+    @apply font-bold text-center text-5xl absolute opacity-10;
 }
 #aboutmeVrai .container-present {
     @apply w-full;
@@ -154,3 +153,113 @@ body {
         stroke-dashoffset: 175;
     }
 }
+.container-experience {@apply w-full m-auto;}
+.container-experience .title-experience {@apply w-full mt-16 text-center}
+.container-experience .title-experience h1 {
+    @apply font-bold text-xl;
+}
+
+.div_esperience {@apply w-full flex flex-wrap m-8;}
+.div_esperience .content_esperience {@apply w-2/4 p-4 flex flex-wrap;}
+.div_esperience .content_esperience .icon_div {@apply w-10 p-2;}
+.div_esperience .content_esperience .sub-content_div {@apply w-3/4 p-2;}
+.div_esperience .content_esperience .sub-content_div label {
+    @apply text-white opacity-65 border-2 border-zinc-700 border-solid bg-zinc-700 p-1 rounded-lg;
+}
+.div_esperience .content_esperience .sub-content_div h3 {
+    @apply text-white font-semibold mt-3;
+}
+.div_esperience .content_esperience .sub-content_div p {@apply text-white opacity-65;}
+.div_esperience .content_esperience .icon_div i {
+    @apply text-white border-2 border-yellow-500 border-solid rounded-full p-1 bg-yellow-500; 
+}
+
+#my-portfolio {
+    @apply w-9/12 m-auto relative;
+}
+/*  */
+#my-portfolio nav ul {
+    @apply w-full flex flex-row text-center items-center justify-center mb-6;
+}
+#my-portfolio nav ul li {
+    @apply mr-2 text-center font-semibold;
+}
+#my-portfolio .box-portfolio {
+    @apply w-full flex flex-wrap items-center justify-center mb-10;
+}
+#my-portfolio .box-portfolio .content-portfolio {
+    @apply w-3/12 m-2;
+}
+#my-portfolio .box-portfolio .content-portfolio img {
+    @apply w-full;
+}
+#get-in-touch {
+    @apply w-9/12 m-auto relative;
+}
+#get-in-touch .content-get {
+    @apply w-full flex flex-row;
+}
+#get-in-touch .content-get .summary-content {
+    @apply w-2/6;
+}
+#get-in-touch .content-get .summary-content h3{
+    @apply font-semibold;
+}
+#get-in-touch .content-get .summary-content p{
+    @apply opacity-70;
+}
+#get-in-touch .content-get .summary-content .element-cont {
+    @apply flex flex-row m-3;
+}
+#get-in-touch .content-get .summary-content .div-expli{
+    @apply opacity-70 ml-3;
+}
+#get-in-touch .content-get .summary-content .element-cont i {
+    @apply text-yellow-500;
+}
+#get-in-touch .content-get .summary-content .element-cont h5 {
+    @apply font-semibold opacity-60;
+}
+#get-in-touch .content-get .summary-content .element-cont label {
+    @apply font-bold;
+}
+/* */
+#get-in-touch .content-get .input-content {
+    @apply w-4/6;
+}
+#get-in-touch .icon-bottom {
+    @apply w-full;
+}
+#get-in-touch .icon-bottom i {
+    @apply border-2 border-zinc-700 border-solid p-2 rounded-full bg-zinc-700;
+}
+#get-in-touch .input-content {
+    @apply w-4/6 flex flex-wrap relative;
+}
+#get-in-touch .input-content input {
+    @apply w-5/12 rounded-xl bg-zinc-700 p-2 m-3;
+}
+#get-in-touch .input-content input:nth-child(2) {
+    @apply absolute right-5 top-0;
+}
+#get-in-touch .input-content textarea {
+    @apply w-full rounded-xl p-3 m-3 bg-zinc-700;
+}
+#get-in-touch button {
+    @apply text-white p-2 pl-5 pr-5 ;
+}
+#get-in-touch .buttonMore .iconMore {
+    @apply text-white bg-yellow-500 h-10 w-10 rounded-3xl
+    text-center justify-center items-center flex cursor-pointer;
+}
+#my-blog {
+    @apply w-9/12 m-auto relative justify-center items-center  flex-col pt-16;
+}
+#my-blog .content-blog {
+    @apply w-full flex flex-wrap justify-center items-center;
+}
+#my-blog .content-blog .sub-content-blog {
+    @apply w-3/12 items-center justify-center flex flex-col m-3 border-2 border-zinc-700 border-solid bg-zinc-700;
+}
+#my-blog .content-blog .sub-content-blog label { @apply font-bold p-3;}
+#my-blog .content-blog .sub-content-blog p { @apply opacity-70 p-3;}
