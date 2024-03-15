@@ -9,7 +9,7 @@ body {
     @apply w-full h-96 flex flex-row;
 }
 #aboutme .imagePart {
-    @apply w-2/12 m-10 bg-yellow-500 h-3/6
+    @apply w-2/12 m-10 bg-yellow-500 h-5/6
     relative;
 }
 #aboutme .imagePart img {
@@ -42,11 +42,11 @@ body {
 }
 #aboutme .navbar {
     @apply flex flex-col text-center justify-center
-    items-center fixed float-right right-2 top-2/4;
+    items-center fixed float-right right-2 top-1/4;
 }
 #aboutme .navbar a {
     @apply border-2 border-zinc-700
-    border-solid m-2 p-2 rounded-full text-xs/3 bg-zinc-700;
+    border-solid m-2 p-2 rounded-full text-xs/3 mb-16 bg-zinc-700;
 }
 #aboutme .navbar i {
     @apply text-yellow-500 text-xs/3;

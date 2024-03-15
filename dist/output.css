@@ -561,7 +561,7 @@ body {
 #aboutme .imagePart {
   position: relative;
   margin: 2.5rem;
-  height: 50%;
+  height: 83.333333%;
   width: 16.666667%;
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
@@ -649,7 +649,7 @@ body {
 #aboutme .navbar {
   position: fixed;
   right: 0.5rem;
-  top: 50%;
+  top: 25%;
   float: right;
   display: flex;
   flex-direction: column;
@@ -660,6 +660,7 @@ body {
 
 #aboutme .navbar a {
   margin: 0.5rem;
+  margin-bottom: 4rem;
   border-radius: 9999px;
   border-width: 2px;
   border-style: solid;
